@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7865391-fe14-4865-94d5-d6cb6526c616" name="Default Changelist" comment="" />
+    <list default="true" id="f7865391-fe14-4865-94d5-d6cb6526c616" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env_example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/account/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/apps/account/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0002_auto_20200614_1601.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0003_auto_20200614_1615.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0004_auto_20200614_1629.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0005_auto_20200614_1630.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0006_auto_20200614_1633.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0007_auto_20200614_1701.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0008_auto_20200615_0908.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0009_auto_20200615_0908.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0010_auto_20200615_0909.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0011_auto_20200615_1203.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0012_auto_20200615_1207.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0013_auto_20200615_1240.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0014_auto_20200615_1253.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0015_auto_20200618_1513.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/business/migrations/0016_auto_20200618_1708.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0002_auto_20200615_1142.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0003_auto_20200615_1419.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0004_auto_20200615_1519.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0005_auto_20200615_1526.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0006_remove_transaction_business.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0007_auto_20200615_1706.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0008_auto_20200623_2216.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0009_bill_item.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/migrations/0010_bill_quantity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/apps/transaction/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_business_analyzer/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline_business_analyzer/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +55,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dItnbk4QCd40R3aP7rbVPzAmiX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +67,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -85,7 +128,8 @@
       <workItem from="1592124607351" duration="52121000" />
       <workItem from="1592833181948" duration="382000" />
       <workItem from="1592835648972" duration="786000" />
-      <workItem from="1592920671734" duration="20423000" />
+      <workItem from="1592920671734" duration="25266000" />
+      <workItem from="1593014544642" duration="2766000" />
     </task>
     <servers />
   </component>
@@ -93,47 +137,59 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="454" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593015406630">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="454" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593015406630" />
+    <state x="483" y="74" key="#xdebugger.evaluate" timestamp="1593001474060">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="483" y="74" key="#xdebugger.evaluate/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593001474060" />
+    <state x="280" y="0" key="CommitChangelistDialog2" timestamp="1593020579735">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="280" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593020579735" />
     <state x="507" y="212" key="FileChooserDialogImpl" timestamp="1592124692478">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="212" key="FileChooserDialogImpl/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592124692478" />
-    <state width="1398" height="289" key="GridCell.Tab.0.bottom" timestamp="1592998148512">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1593019796109">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="272" key="GridCell.Tab.0.bottom/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592933827181" />
     <state width="1396" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592157745263" />
     <state width="1396" height="272" key="GridCell.Tab.0.bottom/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592241770466" />
-    <state width="1398" height="289" key="GridCell.Tab.0.bottom/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1592998148512" />
-    <state width="1398" height="289" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592949894345" />
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593016349472" />
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593019796109" />
     <state width="1396" height="272" key="GridCell.Tab.0.bottom/0.23.1440.801/-907.-1057.1920.1057@0.23.1440.801" timestamp="1592604025700" />
-    <state width="1398" height="289" key="GridCell.Tab.0.center" timestamp="1592998148510">
+    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1593019796108">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="272" key="GridCell.Tab.0.center/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592933827098" />
     <state width="1396" height="284" key="GridCell.Tab.0.center/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592157745261" />
     <state width="1396" height="272" key="GridCell.Tab.0.center/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592241770464" />
-    <state width="1398" height="289" key="GridCell.Tab.0.center/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1592998148510" />
-    <state width="1398" height="289" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1592949894343" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593016349470" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593019796108" />
     <state width="1396" height="272" key="GridCell.Tab.0.center/0.23.1440.801/-907.-1057.1920.1057@0.23.1440.801" timestamp="1592604025696" />
-    <state width="1398" height="289" key="GridCell.Tab.0.left" timestamp="1592998148509">
+    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1593019796107">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="272" key="GridCell.Tab.0.left/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592933827097" />
     <state width="1396" height="284" key="GridCell.Tab.0.left/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592157745260" />
     <state width="1396" height="272" key="GridCell.Tab.0.left/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592241770463" />
-    <state width="1398" height="289" key="GridCell.Tab.0.left/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1592998148509" />
-    <state width="1398" height="289" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1592949894342" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593016349469" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593019796107" />
     <state width="1396" height="272" key="GridCell.Tab.0.left/0.23.1440.801/-907.-1057.1920.1057@0.23.1440.801" timestamp="1592604025688" />
-    <state width="1398" height="289" key="GridCell.Tab.0.right" timestamp="1592998148511">
+    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1593019796108">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="272" key="GridCell.Tab.0.right/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592933827099" />
     <state width="1396" height="284" key="GridCell.Tab.0.right/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592157745262" />
     <state width="1396" height="272" key="GridCell.Tab.0.right/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592241770465" />
-    <state width="1398" height="289" key="GridCell.Tab.0.right/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1592998148511" />
-    <state width="1398" height="289" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1592949894344" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593016349471" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593019796108" />
     <state width="1396" height="272" key="GridCell.Tab.0.right/0.23.1440.801/-907.-1057.1920.1057@0.23.1440.801" timestamp="1592604025697" />
-    <state width="1398" height="289" key="GridCell.Tab.1.bottom" timestamp="1592998148516">
+    <state width="1398" height="237" key="GridCell.Tab.1.bottom" timestamp="1593014510328">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="284" key="GridCell.Tab.1.bottom/0.0.1440.824/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.824" timestamp="1592139818781" />
@@ -141,16 +197,16 @@
     <state width="1398" height="272" key="GridCell.Tab.1.bottom/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592933826888" />
     <state width="1396" height="284" key="GridCell.Tab.1.bottom/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592157745266" />
     <state width="1396" height="272" key="GridCell.Tab.1.bottom/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592241770388" />
-    <state width="1398" height="289" key="GridCell.Tab.1.bottom/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1592998148516" />
+    <state width="1398" height="237" key="GridCell.Tab.1.bottom/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593014510328" />
     <state width="1398" height="289" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592949894263" />
     <state width="1396" height="272" key="GridCell.Tab.1.bottom/0.23.1440.801/-907.-1057.1920.1057@0.23.1440.801" timestamp="1592604025713" />
     <state width="1398" height="272" key="GridCell.Tab.1.bottom/0.23.1440.804/-1239.-1057.1920.1057/681.-1057.1920.1057@0.23.1440.804" timestamp="1592933852254" />
     <state width="1398" height="180" key="GridCell.Tab.1.bottom/0.23.1440.804@0.23.1440.804" timestamp="1592946278047" />
     <state width="1396" height="272" key="GridCell.Tab.1.bottom/0.23.1440.806/-1279.-1057.1920.1057/641.-1057.1920.1057@0.23.1440.806" timestamp="1592241822018" />
-    <state width="1398" height="289" key="GridCell.Tab.1.bottom/0.23.1440.806/681.-1057.1920.1057/-1239.-1057.1920.1057@0.23.1440.806" timestamp="1592996374979" />
+    <state width="1398" height="237" key="GridCell.Tab.1.bottom/0.23.1440.806/681.-1057.1920.1057/-1239.-1057.1920.1057@0.23.1440.806" timestamp="1593001983978" />
     <state width="1398" height="289" key="GridCell.Tab.1.bottom/0.23.1440.806@0.23.1440.806" timestamp="1592949903151" />
     <state width="1398" height="272" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1592920955732" />
-    <state width="1398" height="289" key="GridCell.Tab.1.center" timestamp="1592998148514">
+    <state width="1398" height="237" key="GridCell.Tab.1.center" timestamp="1593014510326">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="284" key="GridCell.Tab.1.center/0.0.1440.824/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.824" timestamp="1592139818780" />
@@ -158,16 +214,16 @@
     <state width="1398" height="272" key="GridCell.Tab.1.center/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592933826885" />
     <state width="1396" height="284" key="GridCell.Tab.1.center/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592157745264" />
     <state width="1396" height="272" key="GridCell.Tab.1.center/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592241770387" />
-    <state width="1398" height="289" key="GridCell.Tab.1.center/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1592998148514" />
+    <state width="1398" height="237" key="GridCell.Tab.1.center/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593014510326" />
     <state width="1398" height="289" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1592949894262" />
     <state width="1396" height="272" key="GridCell.Tab.1.center/0.23.1440.801/-907.-1057.1920.1057@0.23.1440.801" timestamp="1592604025710" />
     <state width="1398" height="272" key="GridCell.Tab.1.center/0.23.1440.804/-1239.-1057.1920.1057/681.-1057.1920.1057@0.23.1440.804" timestamp="1592933852252" />
     <state width="1398" height="180" key="GridCell.Tab.1.center/0.23.1440.804@0.23.1440.804" timestamp="1592946278046" />
     <state width="1396" height="272" key="GridCell.Tab.1.center/0.23.1440.806/-1279.-1057.1920.1057/641.-1057.1920.1057@0.23.1440.806" timestamp="1592241822016" />
-    <state width="1398" height="289" key="GridCell.Tab.1.center/0.23.1440.806/681.-1057.1920.1057/-1239.-1057.1920.1057@0.23.1440.806" timestamp="1592996374978" />
+    <state width="1398" height="237" key="GridCell.Tab.1.center/0.23.1440.806/681.-1057.1920.1057/-1239.-1057.1920.1057@0.23.1440.806" timestamp="1593001983976" />
     <state width="1398" height="289" key="GridCell.Tab.1.center/0.23.1440.806@0.23.1440.806" timestamp="1592949903150" />
     <state width="1398" height="272" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1592920955692" />
-    <state width="1398" height="289" key="GridCell.Tab.1.left" timestamp="1592998148513">
+    <state width="1398" height="237" key="GridCell.Tab.1.left" timestamp="1593014510322">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="284" key="GridCell.Tab.1.left/0.0.1440.824/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.824" timestamp="1592139818779" />
@@ -175,16 +231,16 @@
     <state width="1398" height="272" key="GridCell.Tab.1.left/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592933826884" />
     <state width="1396" height="284" key="GridCell.Tab.1.left/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592157745263" />
     <state width="1396" height="272" key="GridCell.Tab.1.left/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592241770386" />
-    <state width="1398" height="289" key="GridCell.Tab.1.left/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1592998148513" />
+    <state width="1398" height="237" key="GridCell.Tab.1.left/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593014510322" />
     <state width="1398" height="289" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1592949894262" />
     <state width="1396" height="272" key="GridCell.Tab.1.left/0.23.1440.801/-907.-1057.1920.1057@0.23.1440.801" timestamp="1592604025709" />
     <state width="1398" height="272" key="GridCell.Tab.1.left/0.23.1440.804/-1239.-1057.1920.1057/681.-1057.1920.1057@0.23.1440.804" timestamp="1592933852250" />
     <state width="1398" height="180" key="GridCell.Tab.1.left/0.23.1440.804@0.23.1440.804" timestamp="1592946278044" />
     <state width="1396" height="272" key="GridCell.Tab.1.left/0.23.1440.806/-1279.-1057.1920.1057/641.-1057.1920.1057@0.23.1440.806" timestamp="1592241822014" />
-    <state width="1398" height="289" key="GridCell.Tab.1.left/0.23.1440.806/681.-1057.1920.1057/-1239.-1057.1920.1057@0.23.1440.806" timestamp="1592996374977" />
+    <state width="1398" height="237" key="GridCell.Tab.1.left/0.23.1440.806/681.-1057.1920.1057/-1239.-1057.1920.1057@0.23.1440.806" timestamp="1593001983974" />
     <state width="1398" height="289" key="GridCell.Tab.1.left/0.23.1440.806@0.23.1440.806" timestamp="1592949903148" />
     <state width="1398" height="272" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1592920955691" />
-    <state width="1398" height="289" key="GridCell.Tab.1.right" timestamp="1592998148515">
+    <state width="1398" height="237" key="GridCell.Tab.1.right" timestamp="1593014510327">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="284" key="GridCell.Tab.1.right/0.0.1440.824/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.824" timestamp="1592139818780" />
@@ -192,24 +248,25 @@
     <state width="1398" height="272" key="GridCell.Tab.1.right/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592933826887" />
     <state width="1396" height="284" key="GridCell.Tab.1.right/0.0.1440.900/-1279.-1057.1920.1057/641.-1057.1920.1057@0.0.1440.900" timestamp="1592157745265" />
     <state width="1396" height="272" key="GridCell.Tab.1.right/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592241770388" />
-    <state width="1398" height="289" key="GridCell.Tab.1.right/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1592998148515" />
+    <state width="1398" height="237" key="GridCell.Tab.1.right/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593014510327" />
     <state width="1398" height="289" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1592949894263" />
     <state width="1396" height="272" key="GridCell.Tab.1.right/0.23.1440.801/-907.-1057.1920.1057@0.23.1440.801" timestamp="1592604025712" />
     <state width="1398" height="272" key="GridCell.Tab.1.right/0.23.1440.804/-1239.-1057.1920.1057/681.-1057.1920.1057@0.23.1440.804" timestamp="1592933852253" />
     <state width="1398" height="180" key="GridCell.Tab.1.right/0.23.1440.804@0.23.1440.804" timestamp="1592946278047" />
     <state width="1396" height="272" key="GridCell.Tab.1.right/0.23.1440.806/-1279.-1057.1920.1057/641.-1057.1920.1057@0.23.1440.806" timestamp="1592241822017" />
-    <state width="1398" height="289" key="GridCell.Tab.1.right/0.23.1440.806/681.-1057.1920.1057/-1239.-1057.1920.1057@0.23.1440.806" timestamp="1592996374979" />
+    <state width="1398" height="237" key="GridCell.Tab.1.right/0.23.1440.806/681.-1057.1920.1057/-1239.-1057.1920.1057@0.23.1440.806" timestamp="1593001983977" />
     <state width="1398" height="289" key="GridCell.Tab.1.right/0.23.1440.806@0.23.1440.806" timestamp="1592949903151" />
     <state width="1398" height="272" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1592920955694" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1592124733774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592124733774" />
-    <state x="380" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1592835650478">
+    <state x="380" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1593014616325">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1239.-1080.1920.1080/681.-1080.1920.1080@0.0.1440.900" timestamp="1592835650478" />
     <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1279.-1080.1920.1080/641.-1080.1920.1080@0.0.1440.900" timestamp="1592124613783" />
+    <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900/681.-1080.1920.1080/-1239.-1080.1920.1080@0.0.1440.900" timestamp="1593014616325" />
     <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1592833185681" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1592217579636">
       <screen x="0" y="0" width="1440" height="900" />
@@ -218,13 +275,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/offline_business_analyzer/apps/transaction/views.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
