@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
+print(os.environ.get('SECRET_KEY'))
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*nc3-y0tvbc1ueg!(#r$fb1+5_@7cq2df=m%ux*7eg-)$w&y*4'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -110,11 +114,11 @@ REST_FRAMEWORK = {
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.postgresql',
-		'NAME': 'business_analyzer',
-		'USER': 'imire',
-		'PASSWORD': '',
-		'HOST': 'localhost',
-		'PORT': '5432'
+		'NAME': os.environ.get('DB_NAME'),
+		'USER': os.environ.get('DB_USER'),
+		'PASSWORD': os.environ.get('DB_PASSWORD'),
+		'HOST': os.environ.get('DB_HOST'),
+		'PORT': os.environ.get('DB_PORT')
 
 	}
 }
@@ -155,23 +159,23 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# AWS_UPLOAD_BUCKET = "offline-bussiness-analyzer-bucket"
+# AWS_UPLOAD_BUCKET =
 
-AWS_STORAGE_BUCKET_NAME = "offline-bussiness-analyzer-bucket"
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 
-# AWS_UPLOAD_USERNAME = "offline_business_analyzer_user_imire"
+# AWS_UPLOAD_USERNAME =
 
-# AWS_UPLOAD_GROUP = "Offline_Bussiness_AnalyzerGroup"
+# AWS_UPLOAD_GROUP =
 
-# AWS_UPLOAD_REGION = 'us-west-2'
+# AWS_UPLOAD_REGION =
 
-AWS_UPLOAD_ACCESS_KEY_ID = "AKIAS3RXUCTWBBUCUZRH"
+AWS_UPLOAD_ACCESS_KEY_ID = os.environ.get('AWS_UPLOAD_ACCESS_KEY_ID')
 
-AWS_UPLOAD_SECRET_KEY = "GbGAImvxebcbL+2Wn651hJ7sRaTlHdD4fN+P5pbz"
+AWS_UPLOAD_SECRET_KEY = os.environ.get('AWS_UPLOAD_SECRET_KEY')
 
-AWS_S3_FILE_OVERWRITE = False
+AWS_S3_FILE_OVERWRITE = os.environ.get('AWS_S3_FILE_OVERWRITE')
 
-AWS_DEFAULT_ACL = None
+AWS_DEFAULT_ACL = os.environ.get('AWS_DEFAULT_ACL')
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

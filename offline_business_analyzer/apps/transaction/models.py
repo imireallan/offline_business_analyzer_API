@@ -3,6 +3,16 @@ from offline_business_analyzer.apps.business.models import Business
 from django.conf import settings
 
 
+class Transaction(models.Model):
+	business = models.ForeignKey(Business, on_delete=models.CASCADE, related_name='transactions')
+	csv_file = models.FileField(upload_to='csv_file', blank=True, null=True)
+	created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+	created_at = models.DateTimeField(auto_now_add=True)
+
+	def __str__(self):
+		return str(self.csv_file)
+
+
 class Order(models.Model):
 	STATUS = [
 		('PENDING', 'pending'),
@@ -10,6 +20,8 @@ class Order(models.Model):
 		('REJECTED', 'rejected'),
 		('COMPLETED', 'completed'),
 	]
+
+	transaction = models.ForeignKey(Transaction, on_delete=models.CASCADE, related_name='orders')
 	item = models.CharField(max_length=100)
 	customer = models.CharField(max_length=100)
 	quantity = models.IntegerField()
@@ -38,6 +50,8 @@ class Bill(models.Model):
 		('OPEN', 'open'),
 		('CLOSED', 'closed'),
 	]
+
+	transaction = models.ForeignKey(Transaction, on_delete=models.CASCADE, related_name='bills')
 	bill_number = models.IntegerField()
 	status = models.CharField(max_length=10, choices=STATUS, default='open')
 	supplier = models.CharField(max_length=100)
@@ -60,14 +74,3 @@ class BillPayment(models.Model):
 	def __str__(self):
 		return str(self.bill_number)
 
-
-class Transaction(models.Model):
-	business = models.ForeignKey(Business, on_delete=models.CASCADE, related_name='transactions', default=1)
-	orders = models.ForeignKey(Order, on_delete=models.CASCADE, default=1)
-	bills = models.ForeignKey(Bill, on_delete=models.CASCADE, default=1)
-	csv_file = models.FileField(upload_to='csv_file', blank=True, null=True)
-	created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-	created_at = models.DateTimeField(auto_now_add=True)
-
-	def __str__(self):
-		return str(self.csv_file)
