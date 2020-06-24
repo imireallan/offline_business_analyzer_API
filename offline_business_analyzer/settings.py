@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -181,3 +182,5 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+django_heroku.settings(locals())
