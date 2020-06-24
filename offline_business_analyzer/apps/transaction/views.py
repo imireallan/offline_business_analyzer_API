@@ -9,7 +9,7 @@ from rest_framework import status
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 @parser_classes([MultiPartParser, FormParser])
-def uploadCSV(request):
+def upload_csv(request):
 	data = {}
 	status_code = None
 	serializer = TransactionSerializer(data=request.FILES, context={'user': request.user})

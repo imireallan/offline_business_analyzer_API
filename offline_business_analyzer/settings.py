@@ -15,8 +15,6 @@ import django_heroku
 from dotenv import load_dotenv
 load_dotenv()
 
-print(os.environ.get('SECRET_KEY'))
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -27,7 +25,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = None
+if(os.environ.get('DJANGO_ENV') == 'development'):
+	DEBUG = True
+else:
+	DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -50,7 +52,6 @@ INSTALLED_APPS = [
 	# installed apps
 	'rest_framework',
 	'rest_framework.authtoken',
-	'csvimport.app.CSVImportConf',
 	'storages',
 	'corsheaders'
 ]
@@ -174,13 +175,14 @@ AWS_UPLOAD_ACCESS_KEY_ID = os.environ.get('AWS_UPLOAD_ACCESS_KEY_ID')
 
 AWS_UPLOAD_SECRET_KEY = os.environ.get('AWS_UPLOAD_SECRET_KEY')
 
-AWS_S3_FILE_OVERWRITE = os.environ.get('AWS_S3_FILE_OVERWRITE')
+AWS_S3_FILE_OVERWRITE = False
 
-AWS_DEFAULT_ACL = os.environ.get('AWS_DEFAULT_ACL')
+AWS_DEFAULT_ACL = None
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-django_heroku.settings(locals())
+if(os.environ.get('DJANGO_ENV') == "production"):
+	django_heroku.settings(locals())
