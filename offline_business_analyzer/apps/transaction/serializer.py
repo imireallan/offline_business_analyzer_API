@@ -20,14 +20,12 @@ class TransactionSerializer(serializers.ModelSerializer):
 		csv_file = self.validated_data.get('csv_file', None)
 		created_by = self.context.get('user', None)
 		business = Business.objects.filter(owner=created_by).first()
-		validate_csv_headers(csv_file)
 		transaction = Transaction(
 			created_by=created_by,
 			csv_file=csv_file,
 			business=business
 		)
-		transaction.save()
-		return transaction
+		return validate_csv_headers(csv_file, transaction)
 
 
 class OrderSerializer(serializers.ModelSerializer):
