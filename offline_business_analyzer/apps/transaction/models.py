@@ -5,7 +5,7 @@ from django.conf import settings
 
 class Transaction(models.Model):
 	business = models.ForeignKey(Business, on_delete=models.CASCADE, related_name='transactions')
-	csv_file = models.FileField(upload_to='csv_file', blank=True, null=True)
+	csv_file = models.FileField(upload_to='csv', blank=True, null=True)
 	created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True)
 

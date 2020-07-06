@@ -25,11 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = None
-if(os.environ.get('DJANGO_ENV') == 'development'):
-	DEBUG = True
-else:
-	DEBUG = False
+DEBUG = bool(os.getenv('DEBUG', False))
 
 ALLOWED_HOSTS = []
 
@@ -53,7 +49,8 @@ INSTALLED_APPS = [
 	'rest_framework',
 	'rest_framework.authtoken',
 	'storages',
-	'corsheaders'
+	'corsheaders',
+	'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -116,14 +113,21 @@ REST_FRAMEWORK = {
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.postgresql',
-		'NAME': os.environ.get('DB_NAME'),
-		'USER': os.environ.get('DB_USER'),
-		'PASSWORD': os.environ.get('DB_PASSWORD'),
-		'HOST': os.environ.get('DB_HOST'),
-		'PORT': os.environ.get('DB_PORT')
+		'NAME': os.environ.get('POSTGRES_DB'),
+		'USER': os.environ.get('POSTGRES_USER'),
+		'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+		'HOST': os.environ.get('POSTGRES_HOST'),
+		'PORT': os.environ.get('POSTGRES_PORT')
 
 	}
 }
+
+CELERY_BROKER_URL = 'amqp://rabbitmq'
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_CACHE_BACKEND = 'django-cache'
+CELERY_ACCEPT_CONTENT = ['pickle']
+CELERY_TASK_SERIALIZER = 'pickle'
+C_FORCE_ROOT = bool(os.getenv('C_FORCE_ROOT', False))
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -163,7 +167,7 @@ STATIC_URL = '/static/'
 
 # AWS_UPLOAD_BUCKET =
 
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+# AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 
 # AWS_UPLOAD_USERNAME =
 
@@ -171,18 +175,21 @@ AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 
 # AWS_UPLOAD_REGION =
 
-AWS_UPLOAD_ACCESS_KEY_ID = os.environ.get('AWS_UPLOAD_ACCESS_KEY_ID')
-
-AWS_UPLOAD_SECRET_KEY = os.environ.get('AWS_UPLOAD_SECRET_KEY')
-
-AWS_S3_FILE_OVERWRITE = False
-
-AWS_DEFAULT_ACL = None
-
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# AWS_UPLOAD_ACCESS_KEY_ID = os.environ.get('AWS_UPLOAD_ACCESS_KEY_ID')
+#
+# AWS_UPLOAD_SECRET_KEY = os.environ.get('AWS_UPLOAD_SECRET_KEY')
+#
+# AWS_S3_FILE_OVERWRITE = False
+#
+# AWS_DEFAULT_ACL = None
+#
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if(os.environ.get('DJANGO_ENV') == "production"):
 	django_heroku.settings(locals())
